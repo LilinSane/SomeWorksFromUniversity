@@ -1,0 +1,142 @@
+.img-width {
+    width: 200px;
+}
+
+.signature {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+}
+
+.sign-link {
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.sign-link:hover {
+    color: #a682b0;
+}
+
+.inline {
+    display: inline;
+}
+
+.container {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.main-table {
+    margin: 0;
+    margin-top: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    border-spacing: 100px 25px;
+    border-color: #99ccff;
+    border-width: 7px;
+    transform: translate(-50%, -50%)
+}
+
+.td-input {
+    border-width: 0;
+    font-family: cursive;
+}
+
+.td-input p {
+    color: #7f47b9;
+}
+
+.td-input input[type="text"] {
+    font-family: cursive;
+    background: linear-gradient(#6699ff, #FFEFD5) fixed;
+}
+
+.td-input input[type="select"] {
+    font-family: cursive;
+    background: linear-gradient(#6699ff, #FFEFD5) fixed;
+}
+
+input[type="radio"] {
+    width: 16px;
+}
+
+.rounded-input {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.result-table {
+    margin: auto;
+    margin-top: 48%;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+
+.result-table thead tr {
+    color: #ffffff;
+    font-weight: bold;
+    background: #00bf80;
+}
+
+.result-table thead tr td {
+    border: 1px solid #01ab73;
+}
+
+.result-table tbody tr td {
+    border: 1px solid #e8e9eb;
+}
+
+.column{
+    font-family: sans-serif;
+    color: #00b33c;
+    background: #ffffff;
+}
+
+.btn {
+    display: inline-block;  
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 0 5px 5px 0;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #444;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;  
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+}
+.btn:focus-visible {
+    border: 1px solid #4c51f9;
+    outline: none;
+}
+.btn:hover {
+    transition: all 0.2s;
+    box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.btn:active {
+    background-color: #808080;
+}
+
+.td-input .error-msg{
+    color: #ff3d3d;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(#FFA07A, #FFEFD5) fixed;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: SilafejiraRegular; /* Гарнитура шрифта */
+    src: url(../fonts/SilafejiraRegular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Inkulinati-Regular; /* Гарнитура шрифта */
+    src: url(../fonts/Inkulinati-Regular.otf); /* Путь к файлу со шрифтом */
+}

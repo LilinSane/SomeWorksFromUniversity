@@ -1,0 +1,157 @@
+<div class="container bg-dark text-light">
+
+
+  <div class="row align-items-center" >
+    <div class="col"></div>
+    <div class="col justify-content-center">
+      <div id="plane-container" style="height: 225px; width: 450px">
+        <canvas id="plane" (click)="addPointOnPlane($event)" ></canvas>
+      </div>
+      <form name="form"
+            #f="ngForm">
+        <p>X &isin; [-4,4]</p>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Xgroup" value="-4" [(ngModel)]="selectedValueX"></p-radioButton>
+          <label class="ms-1">-4</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Xgroup" value="-3" [(ngModel)]="selectedValueX"></p-radioButton>
+          <label class="ms-1">-3</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Xgroup" value="-2" [(ngModel)]="selectedValueX"></p-radioButton>
+          <label class="ms-1">-2</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Xgroup" value="-1" [(ngModel)]="selectedValueX"></p-radioButton>
+          <label class="ms-1">-1</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-21">
+          <p-radioButton name="Xgroup" value="0" [(ngModel)]="selectedValueX"></p-radioButton>
+          <label class="ms-1">0</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Xgroup" value="1" [(ngModel)]="selectedValueX"></p-radioButton>
+          <label class="ms-1">1</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Xgroup" value="2" [(ngModel)]="selectedValueX"></p-radioButton>
+          <label class="ms-1">2</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Xgroup" value="3" [(ngModel)]="selectedValueX"></p-radioButton>
+          <label class="ms-1">3</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Xgroup" value="4" [(ngModel)]="selectedValueX"></p-radioButton>
+          <label class="ms-1">4</label>
+        </div>
+
+        <p class="mt-2">Y &isin; [-5,4]</p>
+        <span class="p-float-label mt-3">
+          <input  name="ValueY" id="Y-сoordinate" type="text" pInputText [(ngModel)]="valueY"  required
+                 pattern="(^-?[0-4]$)|(^-?[0-4](\.|\,)[0-9]{1,3}$)|(^-5$)|(^-5(\.|\,)[0-9]{1,3}$)" >
+          <label for="Y-сoordinate">Y coordinate</label>
+        </span>
+        <p>{{valueY}}</p>
+
+
+        <p class="mt-2">R &isin; [-4,4]</p>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Rgroup" value="-4" [(ngModel)]="selectedValueR" (click)="resizePlane()"></p-radioButton>
+          <label class="ms-1">-4</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Rgroup" value="-3" [(ngModel)]="selectedValueR" (click)="resizePlane()"></p-radioButton>
+          <label class="ms-1">-3</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Rgroup" value="-2" [(ngModel)]="selectedValueR" (click)="resizePlane()"></p-radioButton>
+          <label class="ms-1">-2</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Rgroup" value="-1" [(ngModel)]="selectedValueR" (click)="resizePlane()"></p-radioButton>
+          <label class="ms-1">-1</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Rgroup" value="0" [(ngModel)]="selectedValueR" (click)="resizePlane()"></p-radioButton>
+          <label class="ms-1">0</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Rgroup" value="1" [(ngModel)]="selectedValueR" (click)="resizePlane()"></p-radioButton>
+          <label class="ms-1">1</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Rgroup" value="2" [(ngModel)]="selectedValueR" (click)="resizePlane()"></p-radioButton>
+          <label class="ms-1">2</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Rgroup" value="3" [(ngModel)]="selectedValueR" (click)="resizePlane()"></p-radioButton>
+          <label class="ms-1">3</label>
+        </div>
+        <div class="form-check-inline mt-1 ms-0 me-2">
+          <p-radioButton name="Rgroup" value="4" [(ngModel)]="selectedValueR" (click)="resizePlane()"></p-radioButton>
+          <label class="ms-1">4</label>
+        </div>
+        <div class="mt-5">
+          <button type="submit" (click)="addPoint()" [disabled]="f.invalid"
+                  class="btn btn-outline-light btn-lg px-5">Отправить
+          </button>
+          <button type="submit" (click)="clearPoints()" class="btn btn-outline-light btn-lg px-5">Очистить</button>
+        </div>
+      </form>
+
+    </div>
+
+    <div class="col">
+        <button type="submit" (click)="onLogout()" class="btn btn-outline-light btn-lg px-5">Log Out</button>
+    </div>
+  </div>
+  <table class="table table-dark table-striped mt-5 mb-5">
+    <thead>
+    <tr>
+      <td>
+        <p>Координата X</p>
+      </td>
+      <td>
+        <p>Координата Y</p>
+      </td>
+      <td>
+        <p>Число R</p>
+      </td>
+      <td>
+        <p>Результат</p>
+      </td>
+      <td>
+        <p>Время работы скрипта</p>
+      </td>
+      <td>
+        <p>Текущее время</p>
+      </td>
+    </tr>
+    </thead>
+    <tbody *ngFor="let point of points">
+    <tr>
+      <td>
+        <p>{{point.x}}</p>
+      </td>
+      <td>
+        <p>{{point.y}}</p>
+      </td>
+      <td>
+        <p>{{point.r}}</p>
+      </td>
+      <td>
+        <p *ngIf="point.hit">Попал</p>
+        <p *ngIf="!point.hit">Не попал</p>
+      </td>
+      <td>
+        <p>{{point.workTime}}</p>
+      </td>
+      <td>
+        <p>{{point.currTime}}</p>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="All Tests">
+        <State />
+      </entry>
+      <entry key="DropdownInputTemplateTest">
+        <State />
+      </entry>
+      <entry key="ExampleInstrumentedTest">
+        <State />
+      </entry>
+      <entry key="MyTest">
+        <State />
+      </entry>
+      <entry key="app">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="adb-R58R61F0BAY-K5f88L._adb-tls-connect._tcp" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-01T16:14:15.015101700Z" />
+        </State>
+      </entry>
+      <entry key="dropdownInputTemplate_initialSelection()">
+        <State />
+      </entry>
+      <entry key="dropdownInputTemplate_selectionChange()">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>

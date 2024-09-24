@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/USER/Desktop/BLPS/BLPS_1/src/main/java/com/example/blps_1</OriginalElement>
+  <nodes>
+    <node x="62.0" y="149.5">com.example.blps_1.service.VendorService</node>
+    <node x="-344.0" y="3166.5">com.example.blps_1.controller.ClientController</node>
+    <node x="276.0" y="3178.0">com.example.blps_1.controller.ProductController</node>
+    <node x="-306.0" y="693.0">com.example.blps_1.repository.ClientRepository</node>
+    <node x="-169.0" y="1726.5">com.example.blps_1.service.NotificationService</node>
+    <node x="694.0" y="1203.5">com.example.blps_1.dto.CategoryDTO</node>
+    <node x="90.5" y="693.0">com.example.blps_1.Blps1Application</node>
+    <node x="-81.5" y="46.0">com.example.blps_1.repository.CategoryRepository</node>
+    <node x="454.0" y="2114.5">com.example.blps_1.dto.ClientDTO</node>
+    <node x="559.5" y="2579.5">com.example.blps_1.entity.Client</node>
+    <node x="587.5" y="1554.0">com.example.blps_1.entity.Product</node>
+    <node x="106.0" y="-14.0">com.example.blps_1.repository.VendorRepository</node>
+    <node x="574.0" y="837.5">com.example.blps_1.entity.Category</node>
+    <node x="34.0" y="1203.5">com.example.blps_1.dto.VendorDTO</node>
+    <node x="247.0" y="313.0">com.example.blps_1.repository.ProductRepository</node>
+    <node x="-103.5" y="2809.5">com.example.blps_1.controller.PaymentController</node>
+    <node x="-129.5" y="289.5">com.example.blps_1.service.CategoryService</node>
+    <node x="-122.0" y="463.5">com.example.blps_1.service.ProductService</node>
+    <node x="454.0" y="1157.5">com.example.blps_1.entity.Vendor</node>
+    <node x="214.0" y="2080.0">com.example.blps_1.dto.ProductDTO</node>
+    <node x="-348.0" y="1203.5">com.example.blps_1.service.ClientService</node>
+    <node x="-307.0" y="2241.0">com.example.blps_1.service.PaymentService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.blps_1.entity.Product" target="com.example.blps_1.entity.Vendor" relationship="TO_ONE">
+      <point x="0.0" y="-246.0" />
+      <point x="699.0" y="1520.0" />
+      <point x="679.0" y="1520.0" />
+      <point x="679.0" y="1500.0" />
+      <point x="559.0" y="1500.0" />
+      <point x="0.0" y="142.5" />
+    </edge>
+    <edge source="com.example.blps_1.controller.ProductController" target="com.example.blps_1.service.NotificationService" relationship="TO_ONE">
+      <point x="0.0" y="-62.0" />
+      <point x="439.0" y="2740.0" />
+      <point x="-1.0" y="2740.0" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="com.example.blps_1.service.NotificationService" target="com.example.blps_1.service.ProductService" relationship="TO_ONE">
+      <point x="0.0" y="-73.5" />
+      <point x="-1.0" y="1680.0" />
+      <point x="19.0" y="1680.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="com.example.blps_1.service.ProductService" target="com.example.blps_1.repository.ProductRepository" relationship="TO_ONE">
+      <point x="0.0" y="-96.5" />
+      <point x="19.0" y="440.0" />
+      <point x="359.0" y="440.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.example.blps_1.controller.PaymentController" target="com.example.blps_1.service.NotificationService" relationship="TO_ONE">
+      <point x="0.0" y="-50.5" />
+      <point x="39.0" y="2780.0" />
+      <point x="-1.0" y="2780.0" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="com.example.blps_1.service.ProductService" target="com.example.blps_1.service.CategoryService" relationship="TO_ONE">
+      <point x="0.0" y="-96.5" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="com.example.blps_1.controller.ClientController" target="com.example.blps_1.service.NotificationService" relationship="TO_ONE">
+      <point x="0.0" y="-73.5" />
+      <point x="-161.0" y="3140.0" />
+      <point x="-341.0" y="3140.0" />
+      <point x="-341.0" y="2720.0" />
+      <point x="-1.0" y="2720.0" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="com.example.blps_1.service.ClientService" target="com.example.blps_1.service.ProductService" relationship="TO_ONE">
+      <point x="0.0" y="-96.5" />
+      <point x="-181.0" y="1160.0" />
+      <point x="19.0" y="1160.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="com.example.blps_1.entity.Product" target="com.example.blps_1.entity.Category" relationship="TO_ONE">
+      <point x="0.0" y="-246.0" />
+      <point x="699.0" y="1520.0" />
+      <point x="679.0" y="1520.0" />
+      <point x="0.0" y="142.5" />
+    </edge>
+    <edge source="com.example.blps_1.service.NotificationService" target="com.example.blps_1.service.ClientService" relationship="TO_ONE">
+      <point x="0.0" y="-73.5" />
+      <point x="-1.0" y="1440.0" />
+      <point x="-201.0" y="1440.0" />
+      <point x="-201.0" y="1420.0" />
+      <point x="-181.0" y="1420.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="com.example.blps_1.entity.Client" target="com.example.blps_1.entity.Product" relationship="TO_MANY">
+      <point x="0.0" y="-280.5" />
+      <point x="0.0" y="246.0" />
+    </edge>
+    <edge source="com.example.blps_1.controller.ClientController" target="com.example.blps_1.service.ClientService" relationship="TO_ONE">
+      <point x="0.0" y="-73.5" />
+      <point x="-161.0" y="3140.0" />
+      <point x="-341.0" y="3140.0" />
+      <point x="-341.0" y="1700.0" />
+      <point x="-201.0" y="1700.0" />
+      <point x="-201.0" y="1420.0" />
+      <point x="-181.0" y="1420.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="com.example.blps_1.controller.PaymentController" target="com.example.blps_1.service.PaymentService" relationship="TO_ONE">
+      <point x="0.0" y="-50.5" />
+      <point x="39.0" y="2780.0" />
+      <point x="-1.0" y="2780.0" />
+      <point x="-1.0" y="2760.0" />
+      <point x="-201.0" y="2760.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="com.example.blps_1.service.PaymentService" target="com.example.blps_1.service.ClientService" relationship="TO_ONE">
+      <point x="0.0" y="-39.0" />
+      <point x="-201.0" y="1420.0" />
+      <point x="-181.0" y="1420.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="com.example.blps_1.service.VendorService" target="com.example.blps_1.repository.VendorRepository" relationship="TO_ONE">
+      <point x="0.0" y="-50.5" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.blps_1.service.ProductService" target="com.example.blps_1.service.VendorService" relationship="TO_ONE">
+      <point x="0.0" y="-96.5" />
+      <point x="19.0" y="440.0" />
+      <point x="199.0" y="440.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="com.example.blps_1.controller.ProductController" target="com.example.blps_1.service.ProductService" relationship="TO_ONE">
+      <point x="0.0" y="-62.0" />
+      <point x="439.0" y="1180.0" />
+      <point x="19.0" y="1180.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="com.example.blps_1.service.CategoryService" target="com.example.blps_1.repository.CategoryRepository" relationship="TO_ONE">
+      <point x="0.0" y="-50.5" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.blps_1.controller.ProductController" target="com.example.blps_1.service.ClientService" relationship="TO_ONE">
+      <point x="0.0" y="-62.0" />
+      <point x="439.0" y="2720.0" />
+      <point x="199.0" y="2720.0" />
+      <point x="199.0" y="1700.0" />
+      <point x="-201.0" y="1700.0" />
+      <point x="-201.0" y="1420.0" />
+      <point x="-181.0" y="1420.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="com.example.blps_1.controller.ClientController" target="com.example.blps_1.service.ProductService" relationship="TO_ONE">
+      <point x="0.0" y="-73.5" />
+      <point x="-161.0" y="3140.0" />
+      <point x="-341.0" y="3140.0" />
+      <point x="-341.0" y="3120.0" />
+      <point x="-381.0" y="3120.0" />
+      <point x="-381.0" y="1180.0" />
+      <point x="19.0" y="1180.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="com.example.blps_1.service.ClientService" target="com.example.blps_1.repository.ClientRepository" relationship="TO_ONE">
+      <point x="0.0" y="-96.5" />
+      <point x="0.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.20221027479091996" showDependencies="true" x="261.50000000000045" y="1650.0000000000002" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

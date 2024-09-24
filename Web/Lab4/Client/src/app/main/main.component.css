@@ -1,0 +1,7 @@
+#plane{
+  width: 450px;
+  height: 225px;
+  background-color: white;
+  z-index: 2;
+}
+

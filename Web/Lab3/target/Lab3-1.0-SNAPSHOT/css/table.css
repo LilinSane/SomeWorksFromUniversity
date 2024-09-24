@@ -1,0 +1,28 @@
+.table_block{
+	font-family: Inkulinati-Regular;
+	margin-top: 15px;
+}
+
+.result_table{
+	border-color: #0095ff;
+	border-collapse: collapse;
+	border-width: 2px;
+}
+
+#tbody p{
+	margin: 0;
+}
+
+.neon_blue { 
+ -moz-box-shadow: 0px 0px 14px #12c2c4; 
+ -webkit-box-shadow: 0px 0px 14px #12c2c4; 
+ box-shadow: 0px 0px 14px #12c2c4; 
+ 
+ }
+
+ .neon_red{
+ 	-moz-box-shadow: 0px 0px 14px #ff005e; 
+	-webkit-box-shadow: 0px 0px 14px #ff005e; 
+ 	box-shadow: 0px 0px 14px #ff005e; 
+
+ }

@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+}
+
+#nav_bar{
+	background-color: #262323;
+	position: sticky;
+	z-index: 999;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    top: 0;
+}
+
+.nav_item{
+	margin: auto 0;
+}
+
+.nav_item a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#name{
+	font-size: 20px;
+}
+
+#logo{
+	width: 170px;
+}
+
+#owner{
+	font-family: SilafejiraRegular;
+	font-size: 32px;
+}
+
+#sign{
+	color: #fff;
+}
+
+#sign a{
+	color: #a906c2;
+}
